@@ -6,7 +6,7 @@ The research team at my organization needs to update the file permissions for ce
 The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.
 To check for current  permission i used the command line “ls -l” to display for directories and files. I used the” ls -la” command line  to check for hidden files and the output are as follow:
 
-![output of ls -l command](images/output of ls -l command.png)
+![output of ls -l command](images/output_ls-l_command.png)
 
 The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named .project_x.txt, and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
 
@@ -25,7 +25,7 @@ The organization determined that other shouldn't have write access to any of the
 The following code demonstrates how I used Linux commands to do this:
  i used the command line, "chmod o-w project_k.txt" and the permission was modified.
 
- ![output of chmod command](images/output of chmod command.png)
+ ![output of chmod command](images/output_chmod_command.png)
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. The chmod command changes the permissions on files and directories. The first argument indicates what permissions should be changed, and the second argument specifies the file or directory. In this example, I removed write permissions from other for the project_k.txt file. After this, I used "ls -la" to review the updates I made.
 
@@ -36,7 +36,7 @@ The following code demonstrates how I used Linux commands to change the permissi
 To modify this the command line i used is  "chmod u-w, g-w . project_ x.txt" to remove write permission for group and user
 To permit read permission for group "chmod g+r . project_x.txt"
 
-![output of chmod hidden file command](images/output of chmod hidden file command.png)
+![output of chmod hidden file command](images/output_chmod_hidden_file_command.png)
 
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know .project_x.txt is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with u-w. Then, I removed write permissions from the group with g-w, and added read permissions to the group with g+r. 
 
@@ -46,12 +46,13 @@ My organization only wants the researcher2 user to have access to the drafts dir
 The following code demonstrates how I used Linux commands to change the permissions:
  the command line i used to execute this is "Chmod g-x drafts"
 
- ![output of chmod directory command](images/output of chmod directory command.png)
+ ![output of chmod directory command](images/output_chmod_directory_command.png)
 
 The output here displays the permission listing for several files and directories. Line 1 indicates the current directory (projects), and line 2 indicates the parent directory (home). Line 3 indicates a regular file titled .project_x.txt. Line 4 is the directory (drafts) with restricted permissions. Here you can see that only researcher2 has execute permissions.  It was previously determined that the group had execute permissions, so I used the "chmod command" to remove them. The researcher2 user already had execute permissions, so they did not need to be added.
 
 # Summary
 I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using ls -la to check the permissions for the directory. This informed my decisions in the following steps. I then used the chmod command multiple times to change the permissions on files and directories.
+
 
 
 
