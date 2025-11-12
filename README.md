@@ -1,5 +1,5 @@
 ### Summary 
-This lab work show efficiency in the use of the tool Linux, as a security analyst working with a research team as part of my job to manage authorization, for this project i would be investigating and updating the  file permissions,i would be checking existing permission on  the file system to determine if the permissions match the authorization that should be given. If they do not match, i will be modifying the permissions to authorize the appropriate users and remove any unauthorized access.
+This project demonstrates practical application of "chmod" command for file security, a core skill for any Linux administrator or cybersecurity professional, for this project i would be investigating and updating the  file permissions,i would be checking existing permission on  the file system to determine if the permissions match the authorization that should be given. If they do not match, i will be modifying the permissions to authorize the appropriate users and remove any unauthorized access.
 ### Tools
 Linux (command line tool)
 Google drive (for documentation)
