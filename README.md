@@ -14,6 +14,8 @@ As a research team files are very valuable assest and authorization should be du
 ### Result
 The organization file system authorization has been modified to fit permissions to proper authorized user and securing  the organization file system
 ### Artifacts
+See project artifacts @ # current file permission.md (a file containing the status of the permission set for file system before the modification)
+@ # Linux file permission.md (a file containing the full details of the labwork inluding codes,images for proof e.t.c)
 
 
 
